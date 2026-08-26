@@ -1,0 +1,20 @@
+{
+  "type": "python",
+  "testFiles": [
+    {
+      "path": "tests/lab_test.py",
+      "testCases": [
+        {
+          "methodName": "test_problem1",
+          "label": "Verify the post table was created with a foreign key",
+          "description": "Runs problem1(), which should create the post table referencing site_user, then confirms a valid insert succeeds."
+        },
+        {
+          "methodName": "test_problem1_ref_integrity",
+          "label": "Verify the foreign key enforces referential integrity",
+          "description": "Confirms that inserting a post with a user_fk that doesn't exist in site_user raises an integrity error."
+        }
+      ]
+    }
+  ]
+}
